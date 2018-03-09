@@ -1,0 +1,48 @@
+
+<h1><%= link_to('Create new Todo', '/todos/new') %></h1>
+
+
+<table> 
+    <tr>
+        <th>Todo Id</th>
+        <th>Todo Task</th>
+        <th>Todo Status</th>
+    </tr>
+<% @todos.each do | t | %>       
+  <tr>
+    <td><%= t.id %></td>  
+    <td><%= t.tasks %></td> 
+    <td><%= t.finished %></td> 
+  </tr>
+<% end %> 
+</table> 
+
+<table> 
+    <tr>
+        <th>Cat Id</th>
+        <th>Cat Name</th>
+    </tr>
+<% @cats.each do | cat | %>       
+  <tr>
+    <td><%= cat.id %></td>  
+    <td><%= cat.name %></td> 
+  </tr>
+<% end %> 
+</table>    
+
+
+<table> 
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Age</th>
+    </tr>
+<% @users.each do | u | %>       
+  <tr>
+    <td><%= u.username %></td>  
+    <td><%= u.email %></td> 
+    <td><%= u.age %></td> 
+  </tr>
+<% end %> 
+</table> 
+

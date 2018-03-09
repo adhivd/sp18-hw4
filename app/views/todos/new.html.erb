@@ -1,0 +1,5 @@
+<%= form_for :todo, url: "/todos" do |f| %>
+    Task Name: <%= f.text_field :tasks %><br />
+    Finished?: <%= f.check_box :finished %><br />
+      <%= f.submit %>
+<% end %>
